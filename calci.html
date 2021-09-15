@@ -1,0 +1,71 @@
+
+<html lang="en">
+<head>
+    
+    <script>
+        function clik(val){
+            document.getElementById("result").value+=val;
+        }
+        function sol(){
+            let x = document.getElementById("result").value
+             let y = eval(x)
+             document.getElementById("result").value = y
+        }
+        function clr()
+         {
+             document.getElementById("result").value = " "
+         }
+    </script>
+    <style>
+        .btn{
+            width: 100%;
+            background-color: lightgray;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: auto;
+        }
+
+    </style>
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <table border="2">
+            <tr>
+                <td colspan="4"><input type="text" id="result" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" class="btn" onclick="clik('1')"></td>
+                <td><input type="button" value="2" class="btn" onclick="clik('2')"></td>
+                <td><input type="button" value="3" class="btn" onclick="clik('3')"></td>
+                <td><input type="button" value="+" class="btn" onclick="clik('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" class="btn" onclick="clik('4')"></td>
+                <td><input type="button" value="5" class="btn"onclick="clik('5')"></td>
+                <td><input type="button" value="6" class="btn" onclick="clik('6')"></td>
+                <td><input type="button" value="-" class="btn" onclick="clik('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" class="btn" onclick="clik('7')"></td>
+                <td><input type="button" value="8" class="btn" onclick="clik('8')"></td>
+                <td><input type="button" value="9" class="btn" onclick="clik('9')"></td>
+                <td><input type="button" value="/" class="btn"onclick="clik('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="%" class="btn" onclick="clik('%')"></td>
+                <td><input type="button" value="0" class="btn" onclick="clik('0')"></td>
+                <td><input type="button" value="*" class="btn" onclick="clik('X')"></td>
+                <td><input type="button" value="=" class="btn" onclick="sol()"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="reset" value="Reset/Clear" onclick="clr()" class="btn"></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
