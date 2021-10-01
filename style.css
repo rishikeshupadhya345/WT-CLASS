@@ -22,21 +22,37 @@ li {
     background-color: #030e44;
 }
 .form {
-    height: 570px;
-    width: 1282px;
+    height: 531px;
+    width: 971px;
     border: 2px solid wheat;
     margin-top: 141px;
-    margin-left: 156px;
-    position: absolute;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/bg_se.jpg);
+    margin-left: 242px;
+    
     background-size: cover;
     border-radius: 70px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+
 }
 span {
-    color: white;
+    color: azure;
     font-size: 22px; 
-    padding-right: 34px;
+    padding-right: 30px;
 }
 .card-body {
     background: linear-gradient(rgba(0,0,0,-0.5),rgba(0,0,0,0.5));
+}
+input {
+    overflow: visible;
+    width: 274px;
+}
+#bt1{
+    color: beige;
+    background-color: transparent;
+    margin-top: 73px;
+    margin-left: 443px;
+    border-radius: 18px;
+    font-size: 25px;
+    width: 129px;
+    height: 52px;
+
 }
